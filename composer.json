@@ -1,0 +1,33 @@
+{
+    "name": "kozlovartem/laravel-db-check",
+    "description": "Laravel Artisan command for database connection testing and error diagnostics",
+    "keywords": ["laravel", "database", "artisan", "diagnostics", "connection", "testing"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Kozlov",
+            "email": "kozlovartem20201@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2|^8.3",
+        "illuminate/console": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KozlovArtem\\LaravelDbCheck\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KozlovArtem\\LaravelDbCheck\\LaravelDbCheckServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
